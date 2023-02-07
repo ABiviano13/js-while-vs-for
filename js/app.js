@@ -14,16 +14,16 @@ do{
     numeroUtente = parseInt(prompt('Inserisci un numero a piacere'));
     // // 1.3.2 Creiamo una variabile resto
     resto = numeroUtente % 2;
-    console.log(numeroUtente, resto);
+    // console.log(numeroUtente, resto);
     
     // 1.3.3 Creiamo un - if else -
     if (resto !== 0  || isNaN(numeroUtente)){
         numeriDispari.push(numeroUtente);
         indiceNumeriDispari += 1;
-        // console.log(indiceNumeriDispari)
+        console.log(numeroUtente);
+        // console.log(indiceNumeriDispari);
     }else {
         console.log('scarto');
-        continue
     };
 
 } while(indiceNumeriDispari !== 10);
