@@ -4,7 +4,7 @@ let numeriDispari = [];
 console.log(numeriDispari);
 let i = 0;
 
-let indiceNumeriDispari = numeriDispari[i];
+let indiceNumeriDispari = i;
 // // 1.2 Creiamo una variabile numero
 let numeroUtente = ''
 
@@ -23,7 +23,7 @@ do{
     }else {
         numeriDispari.push(numeroUtente);
         indiceNumeriDispari += 1;
-        console.log(indiceNumeriDispari)
+        // console.log(indiceNumeriDispari)
     };
 
 } while(indiceNumeriDispari !== 10);
