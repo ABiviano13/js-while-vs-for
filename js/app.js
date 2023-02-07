@@ -17,13 +17,13 @@ do{
     console.log(numeroUtente, resto);
     
     // 1.3.3 Creiamo un - if else -
-    if (resto === 0  || isNaN(numeroUtente)){
-        console.log('scarto');
-        continue
-    }else {
+    if (resto !== 0  || isNaN(numeroUtente)){
         numeriDispari.push(numeroUtente);
         indiceNumeriDispari += 1;
         // console.log(indiceNumeriDispari)
+    }else {
+        console.log('scarto');
+        continue
     };
 
 } while(indiceNumeriDispari !== 10);
