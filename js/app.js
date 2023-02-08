@@ -20,7 +20,7 @@ do{
     if (resto !== 0  || isNaN(numeroUtente)){
         numeriDispari.push(numeroUtente);
         indiceNumeriDispari += 1;
-        // 2. Per stampare i numeri dispari in console a uno a uno useremo il ciclo for
+        // 2. Stampare a uno a uno i numeri dispari nella console
         console.log(numeroUtente);
         // console.log(indiceNumeriDispari);
     }else {
