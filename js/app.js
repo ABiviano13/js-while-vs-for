@@ -1,7 +1,7 @@
 // 1. Per ricavare i numeri dispari dall'utente useremo il ciclo while
 // 1.1 Creiamo un array vuoto dove salveremo i nostri numeri dispari
 let numeriDispari = [];
-console.log(numeriDispari);
+// console.log(numeriDispari);
 
 // // 1.2 Creiamo una variabile numero
 let numeroUtente = ''
@@ -18,14 +18,18 @@ do{
     // 1.3.3 Creiamo un - if else -
     if (resto !== 0  || isNaN(numeroUtente)){
         numeriDispari.push(numeroUtente);
-
-        // 2. Stampare a uno a uno i numeri dispari nella console
-        console.log(numeroUtente);
+        // console.log(numeroUtente);
     }else {
-        console.log('scarto');
+        console.log('Non è un numero dispari.');
     };
 
 } while(numeriDispari.length < 10);
 
-console.log('finalmente usciti dal ciclo while');
+console.log('finalmente usciti dal ciclo while', numeriDispari);
+
+// 2. Stampare a uno a uno i numeri dispari nella console con ciclo for
+for(let i = 0; i < numeriDispari.length; i++){
+    const numeroCorrente = numeriDispari[i]
+    console.log(numeroCorrente);
+}
 
